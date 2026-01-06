@@ -32,7 +32,7 @@ class Song:
             for lyrics_line, chords_line in zip(lyrics_lines, chords_lines):
                 lyric = lyrics_line if len(lyrics_line) > 0 else "-"
                 chords = f" | {chords_line}" if chords_line != "" else ""
-                data += f"{" "*8 if paragraph.type == "chorus" else ""}{lyric.ljust(max_line_len+4)}{chords}\n"
+                data += f"{' '*8 if paragraph.type == 'chorus' else ''}{lyric.ljust(max_line_len+4)}{chords}\n"
             data += "\n"
         return data
     
@@ -85,7 +85,8 @@ class Song:
 
 
 if __name__=="__main__":
-    with open("szanty.fasta", "r") as file:
+    with open("turystyczne.fasta", "r") as file:
         songs = Song.load_from_fasta(file.read())
-    for song in songs:
-        print(song)
+        print(len(songs))
+
+
