@@ -1,4 +1,7 @@
 from typing import List
+import argparse
+import glob
+import os
 
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A5
@@ -14,6 +17,9 @@ pdfmetrics.registerFont(TTFont('NotoSerif-SemiBold', 'NotoSerif-SemiBold.ttf'))
 pdfmetrics.registerFont(TTFont('NotoSerif-Light', 'NotoSerif-Light.ttf'))
 
 def compile_single_song(song: Song, c: canvas):
+    if len(song.paragraphs) == 0:
+        print(f"Skipping song {song.title} due to empty lyrics.")
+        return
     print(f"Compiling song {song.title}...")
     W, H = A5
 
@@ -37,14 +43,19 @@ def compile_single_song(song: Song, c: canvas):
     font = "NotoSerif"
     chordfont = "NotoSerif-SemiBold"
     fontsize = 9.5
+    
     linespacing = 1.2 * fontsize
     par_gap_size = 15
     chorus_offset = 20
-
     chord_gap = 15
-
     min_right_margin = 20
     min_left_margin = 20
+
+    max_text_height = H - title_height
+    text_height = (len(song.paragraphs) - 1) * par_gap_size + sum([len(p.lyrics.split("\n")) for p in song.paragraphs]) * linespacing
+    h_offset = (max_text_height - text_height - 40) / 2
+    h_offset = max(0, min(30, h_offset))
+    h_offset += title_height + 1*linespacing
 
     h_size = 0
     lyrics_widths = []
@@ -79,9 +90,9 @@ def compile_single_song(song: Song, c: canvas):
         text_offset = chorus_offset if paragraph.type == "chorus" else 0
         for i in range(len(lines)):
             c.setFont(font, fontsize)
-            c.drawString(left_margin + text_offset, H - title_height - linespacing - h_size - i*linespacing, lines[i])
+            c.drawString(left_margin + text_offset, H - h_offset - h_size - i*linespacing, lines[i])
             c.setFont(chordfont, fontsize)
-            c.drawString(W - right_margin - chord_offset, H - title_height - linespacing - h_size - i*linespacing, chords[i].replace("7", "₇"))
+            c.drawString(W - right_margin - chord_offset, H - h_offset - h_size - i*linespacing, chords[i].replace("7", "₇"))
         h_size += len(lines) * linespacing + par_gap_size
         
     c.showPage()
@@ -90,8 +101,7 @@ def compile_single_song(song: Song, c: canvas):
 
 
 
-def compile(songs: Song | List[Song]):
-    output_path = "pdf/Śpiewnik.pdf"
+def compile(songs: Song | List[Song], output_path: str):
     c = canvas.Canvas(output_path, A5)
     if not type(songs) == list:
         songs = [songs]
@@ -102,9 +112,46 @@ def compile(songs: Song | List[Song]):
 
 
 
+def main():
+    parser = argparse.ArgumentParser(
+        description="Compile song files (.fasta) into a pdf file."
+    )
+    
+    # nargs='+' collects 1 or more arguments into a list
+    parser.add_argument(
+        'input_files', 
+        nargs='+', 
+        help="Path to .fasta files. Supports wildcards (e.g., songs/*.fasta)"
+    )
+    
+    parser.add_argument(
+        '-o', '--output', 
+        default='pdf/Śpiewnik.pdf',
+        help="Output filename (default: pdf/Śpiewnik.pdf)"
+    )
 
+    args = parser.parse_args()
 
-if __name__=="__main__":
-    with open("szanty.fasta", 'r') as file:
-        songs = Song.load_from_fasta(file.read())
-    compile(songs)
+    all_songs = []
+    
+    # Process each filename provided
+    for pattern in args.input_files:
+        # glob.glob handles cases where the shell might not expand the *
+        for filename in glob.glob(pattern):
+            if os.path.isfile(filename):
+                print(f"Reading {filename}...")
+                with open(filename, 'r', encoding='utf-8') as f:
+                    songs = Song.load_from_fasta(f.read())
+                    all_songs.extend(songs)
+
+    if not all_songs:
+        print("No songs found. Check your file paths.")
+        return
+    
+    all_songs.sort(key=lambda x: x.title)
+
+    compile(all_songs, args.output)
+    print(f"Successfully created {args.output}")
+
+if __name__ == "__main__":
+    main()
