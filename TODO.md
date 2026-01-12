@@ -1,0 +1,1 @@
+- display lines in parentheses with thinner font
