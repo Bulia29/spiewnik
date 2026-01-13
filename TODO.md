@@ -1,1 +1,3 @@
 - display lines in parentheses with thinner font
+- zwiększyć margines górny jeśli tekst nie jest za długi
+- jeśli margines za mały, to tekst może wystawać za linię akordów, żeby ten margines powiększyć
