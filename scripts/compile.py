@@ -15,6 +15,7 @@ pdfmetrics.registerFont(TTFont('Garamond-Bold', 'EBGaramond-Bold.ttf'))
 pdfmetrics.registerFont(TTFont('NotoSerif', 'NotoSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('NotoSerif-SemiBold', 'NotoSerif-SemiBold.ttf'))
 pdfmetrics.registerFont(TTFont('NotoSerif-Light', 'NotoSerif-Light.ttf'))
+pdfmetrics.registerFont(TTFont('NotoSerif-LightItalic', 'NotoSerif-LightItalic.ttf'))
 
 def compile_single_song(song: Song, c: canvas):
     if len(song.paragraphs) == 0:
@@ -23,23 +24,18 @@ def compile_single_song(song: Song, c: canvas):
     print(f"Compiling song {song.title}...")
     W, H = A5
 
-    # Draw title
-    title_height = 46
+    # Title parameters
     title_font = "Garamond-Bold"
+    title_fontsize = 14
     author_font = "NotoSerif-Light"
+    author_fontsize = 10
 
-    width = 0
-    title_width = pdfmetrics.stringWidth(song.title, title_font, 14)
-    width += title_width
-    if song.author is not None:
-        width += 6 + pdfmetrics.stringWidth(song.author, author_font, 10)
-    c.setFont(title_font, 14)
-    c.drawString((W-width)/2, H - 32, song.title)
-    if song.author is not None:
-        c.setFont(author_font, 10)
-        c.drawString((W-width)/2 + title_width + 6, H - 32, song.author)
+    min_top_margin = 20
+    min_title_padding = 20
+    max_title_padding = 60
 
-    # Draw lyrics
+
+    # Lyrics parameters
     font = "NotoSerif"
     chordfont = "NotoSerif-SemiBold"
     fontsize = 9.5
@@ -51,11 +47,28 @@ def compile_single_song(song: Song, c: canvas):
     min_right_margin = 20
     min_left_margin = 20
 
+
+    # Lyrics size computation
     max_text_height = H - title_height
     text_height = (len(song.paragraphs) - 1) * par_gap_size + sum([len(p.lyrics.split("\n")) for p in song.paragraphs]) * linespacing
     h_offset = (max_text_height - text_height - 40) / 2
     h_offset = max(0, min(30, h_offset))
     h_offset += title_height + 1*linespacing
+
+
+    # Draw title
+    width = 0
+    title_width = pdfmetrics.stringWidth(song.title, title_font, 14)
+    width += title_width
+    if song.author is not None:
+        width += 6 + pdfmetrics.stringWidth(song.author, author_font, 10)
+    c.setFont(title_font, 14)
+    c.drawString((W-width)/2, H - 32, song.title)
+    if song.author is not None:
+        c.setFont(author_font, 10)
+        c.drawString((W-width)/2 + title_width + 6, H - 32, song.author)
+
+
 
     h_size = 0
     lyrics_widths = []
@@ -89,8 +102,13 @@ def compile_single_song(song: Song, c: canvas):
         chords = paragraph.chords.split("\n")
         text_offset = chorus_offset if paragraph.type == "chorus" else 0
         for i in range(len(lines)):
-            c.setFont(font, fontsize)
-            c.drawString(left_margin + text_offset, H - h_offset - h_size - i*linespacing, lines[i])
+            text = lines[i]
+            if text.startswith("(") and text.endswith(")"):
+                text = text[1:-1]
+                c.setFont("NotoSerif-LightItalic", fontsize * 0.9)
+            else:
+                c.setFont(font, fontsize)
+            c.drawString(left_margin + text_offset, H - h_offset - h_size - i*linespacing, text)
             c.setFont(chordfont, fontsize)
             c.drawString(W - right_margin - chord_offset, H - h_offset - h_size - i*linespacing, chords[i].replace("7", "₇"))
         h_size += len(lines) * linespacing + par_gap_size
