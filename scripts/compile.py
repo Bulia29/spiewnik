@@ -38,7 +38,7 @@ class CompilationConfig:
 
     min_top_margin = 40
     min_bottom_margin = 20
-    preferred_top_margin = 40
+    preferred_top_margin = 100
     preferred_bottom_margin = 40
     min_title_padding = 10
     optimal_title_padding = 40
@@ -162,7 +162,7 @@ def compute_block_placement(pars: List[ParBlock], title: TitleParams):
     total_content_height = content_height + title_padding
 
     total_margin = (config.page_size[1] - total_content_height)
-    top_margin = 0.3 * total_margin
+    top_margin = 0.4 * total_margin
     bottom_margin = 0.6 * total_margin
     top_margin = max(config.min_top_margin, top_margin)
 
