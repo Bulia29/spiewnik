@@ -426,10 +426,10 @@ Darujcie, to już ballady kres
 
 > Jeźdźcy | Kult
 
-Jadą czterej jeźdźcy, jadą                      | d
-Jadą czterej jeźdźcy, jadą czterej              | a
-Jeźdźcy jadą, jadą czterej                      | C
-Jadą czterej jeźdźcy, jadą, czterej, jadą...    | G
+        Jadą czterej jeźdźcy, jadą                      | d
+        Jadą czterej jeźdźcy, jadą czterej              | a
+        Jeźdźcy jadą, jadą czterej                      | C
+        Jadą czterej jeźdźcy, jadą, czterej, jadą...    | G
 
 Pierwszy niesie Ci głód             | d
 Tak, pierwszy niesie Ci głód        | a 
@@ -446,10 +446,10 @@ Głód w każdym miejscu Twego ciała
 Niesie Ci głód, którego nie chcesz
 A który dostaniesz i tak
 
-Jadą czterej jeźdźcy, jadą
-Jadą czterej jeźdźcy, jadą czterej
-Jeźdźcy jadą, jadą czterej
-Jadą czterej jeźdźcy, jadą, czterej, jadą…
+        Jadą czterej jeźdźcy, jadą
+        Jadą czterej jeźdźcy, jadą czterej
+        Jeźdźcy jadą, jadą czterej
+        Jadą czterej jeźdźcy, jadą, czterej, jadą…
 
 Drugi niesie Ci wojnę
 Tak, drugi niesie Ci wojnę
@@ -466,10 +466,10 @@ Wojnę wokół całego Ciebie
 Niesie Ci wojnę, której nie chcesz
 A którą dostaniesz i tak
 
-Jadą czterej jeźdźcy, jadą
-Jadą czterej jeźdźcy, jadą czterej
-Jeźdźcy jadą, jadą czterej
-Jadą czterej jeźdźcy, jadą, czterej, jadą…
+        Jadą czterej jeźdźcy, jadą
+        Jadą czterej jeźdźcy, jadą czterej
+        Jeźdźcy jadą, jadą czterej
+        Jadą czterej jeźdźcy, jadą, czterej, jadą…
 
 Trzeci niesie Ci śmierć
 Tak, trzeci niesie Ci śmierć
@@ -605,10 +605,10 @@ Oprócz mnie jednego - najbardziej nagrzanego
 
 > Ta droga była daleka | Kazik & Kwartet ProForma
 
-Ta droga była daleka            | d a e a
-Ta droga była bez końca         
-Horyzont wciąż dalej uciekał
-I asfalt był śliski od słońca
+Ta droga była daleka            | d
+Ta droga była bez końca         | a       
+Horyzont wciąż dalej uciekał    | e
+I asfalt był śliski od słońca   | a
 
 Pęd śmiał się i szarpał za włosy
 I dyszał silnik zmęczony

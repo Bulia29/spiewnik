@@ -26,7 +26,7 @@ class FontConfig:
 
 class CompilationConfig:
     page_size = A5
-    font_title = FontConfig("Garamond-Bold", 14)
+    font_title = FontConfig("Garamond-Bold", 15)
     font_author = FontConfig("NotoSerif-Light", 9)
     font_lyrics = FontConfig("NotoSerif", 9)
     font_chords = FontConfig("NotoSerif-SemiBold", 9)
@@ -45,7 +45,7 @@ class CompilationConfig:
 
     chorus_x_offset = 20
 
-    line_spacing = 10.8
+    line_spacing = 11
     chord_gap = 20
     min_chord_x = A5[0]*0.6
     par_gap = 12
