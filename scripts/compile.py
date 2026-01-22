@@ -50,6 +50,8 @@ class CompilationConfig:
     min_chord_x = A5[0]*0.6
     par_gap = 12
 
+    page_bind_offset = 20
+
 config = CompilationConfig()
 
 class TitleParams:
@@ -187,23 +189,27 @@ def compute_block_placement(pars: List[ParBlock], title: TitleParams):
     return [BlockPlacement(title_y, par_x, par_y, chords_x_list, title, pars)]
 
 
-def print_to_canvas(placement: BlockPlacement, canvas: canvas):
+def print_to_canvas(placement: BlockPlacement, canvas: canvas, page_number: int | None = None, x_offset: float = 0.0):
     title = placement.title_params
     pars = placement.parblocks
     W, H = config.page_size
     canvas.setFont(config.font_title.name, config.font_title.size)
-    canvas.drawString(W/2 + title.title_xoffset, placement.title_y, title.title)
+    canvas.drawString(W/2 + x_offset + title.title_xoffset, placement.title_y, title.title)
     if title.author is not None:
         canvas.setFont(config.font_author.name, config.font_author.size)
-        canvas.drawString(W/2 + title.author_xoffset, placement.title_y + title.author_yoffset, title.author)
+        canvas.drawString(W/2 + x_offset + title.author_xoffset, placement.title_y + title.author_yoffset, title.author)
     
     for chords_x, y, par in zip(placement.chords_x_list, placement.pars_y_list, pars):
         canvas.setFont(config.font_lyrics.name, config.font_lyrics.size)
         for i, line in enumerate(par.lyrics_lines):
-            drawStringOrComment(placement.pars_x + par.x_offset, y + i * config.line_spacing, config.font_lyrics, line, canvas)
+            drawStringOrComment(placement.pars_x + par.x_offset + x_offset, y + i * config.line_spacing, config.font_lyrics, line, canvas)
         canvas.setFont(config.font_chords.name, config.font_chords.size)
         for i, line in enumerate(par.chords_lines):
-            drawStringOrComment(chords_x, y + i * config.line_spacing, config.font_chords, line, canvas)
+            drawStringOrComment(chords_x + x_offset, y + i * config.line_spacing, config.font_chords, line, canvas)
+    
+    if page_number is not None:
+        canvas.setFont(config.font_chords.name, config.font_chords.size)
+        canvas.drawCentredString(W/2 + x_offset, H - 25, str(page_number))
 
     canvas.showPage()
 
@@ -246,12 +252,11 @@ def drawStringOrComment(x: float, y: float, font: FontConfig, line: str, canvas:
 
 
 
-def compile_single_song(song: Song, canvas: canvas):
+def compile_single_song(song: Song):
     parblocks = parse_song_lyrics(song)
     titleblock = compute_title_params(song)
     placements = compute_block_placement(parblocks, titleblock)
-    for placement in placements:
-        print_to_canvas(placement, canvas)
+    return placements
 
 
 
@@ -260,8 +265,29 @@ def compile(songs: Song | List[Song], output_path: str):
     c = canvas.Canvas(output_path, config.page_size, bottomup=False)
     if not type(songs) == list:
         songs = [songs]
+    placements = []
     for song in songs:
-        compile_single_song(song, c)
+        placements.append(compile_single_song(song))
+
+    # Ensure that two-page songs always start from even pages
+    page_number = 1
+    for i in range(len(placements)):
+        pages = len(placements[i])
+        if page_number % 2 == 1:
+            if len(placements[i]) > 1:
+                swap = placements[i]
+                placements[i] = placements[i-1]
+                placements[i-1] = swap
+        page_number += pages
+
+    page_number = 1
+    for group in placements:
+        for placement in group:
+            x_offset = config.page_bind_offset
+            if page_number % 2 == 0:
+                x_offset = -x_offset
+            print_to_canvas(placement, c, page_number, x_offset)
+            page_number += 1
     c.save()
     print(f"Saved output to {output_path}.")
 
@@ -306,7 +332,7 @@ def main():
 
     # selected_song = []
     # for song in all_songs:
-    #     if song.title.lower().startswith("nikt tak"):
+    #     if song.title.lower().startswith("niemanie"):
     #         selected_song.append(song)
     # all_songs = selected_song
 
