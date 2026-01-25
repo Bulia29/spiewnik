@@ -1,10 +1,4 @@
-Take me home, country roads
-Bolero
-Bieszczady
-Burza    (akordy A E na przemian)
-Chryzantemy złociste
-Bez słów
-Bitwa
+<!-- Bez słów -->
 A my nie chcemy uciekać stąd
 Odynie
 Tranbsponować kocham cier jak irlandie
