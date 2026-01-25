@@ -9,3 +9,5 @@ wieża babel
 ona jest ze snu
 noc komety
 wonderwall
+zawsze z tobą chciałbym być
+a wszystko to bo ciebie kocham
