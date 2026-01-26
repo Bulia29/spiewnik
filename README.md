@@ -1,4 +1,6 @@
 # Śpiewnik.fasta
+Wersja pdf do pobrania dostępna pod linkiem: https://github.com/Bulia29/spiewnik/releases/
+
 Zawarte piosenki (133):
  - **10 w skali Beauforta**	*(szanty.fasta)*
  - **24. lutego**	*(szanty.fasta)*
@@ -135,6 +137,4 @@ Zawarte piosenki (133):
  - **Łemata**	*(turystyczne.fasta)*
 
 ### TODO:
-dupadf
-daspfoi
-dapfoida
+

@@ -336,6 +336,8 @@ def main():
     #         selected_song.append(song)
     # all_songs = selected_song
 
+    if not os.path.exists(os.path.dirname(args.output)):
+        os.mkdir(os.path.dirname(args.output))
 
     compile(all_songs, args.output)
     print(f"Successfully created {args.output}")

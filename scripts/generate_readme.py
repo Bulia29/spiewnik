@@ -15,6 +15,9 @@ for path in files:
 songs.sort(key=lambda x: x["title"])
 
 print("# Śpiewnik.fasta")
+
+print("Wersja pdf do pobrania dostępna pod linkiem: https://github.com/Bulia29/spiewnik/releases/")
+
 print(f"Zawarte piosenki ({len(songs)}):")
 
 for song in songs:
