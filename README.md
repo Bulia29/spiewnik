@@ -1,0 +1,140 @@
+# Śpiewnik.fasta
+Zawarte piosenki (133):
+ - **10 w skali Beauforta**	*(szanty.fasta)*
+ - **24. lutego**	*(szanty.fasta)*
+ - **6 lat później** – Kult	*(kult.fasta)*
+ - **A my nie chcemy uciekać stąd** – Jacek Kaczmarski	*(kaczmarski.fasta)*
+ - **A wszystko to, bo Ciebie kocham** – Ich Troje	*(roznosci.fasta)*
+ - **Anioł i diabeł**	*(turystyczne.fasta)*
+ - **Arahja** – Kult	*(kult.fasta)*
+ - **Autobiografia** – Perfect	*(perfect.fasta)*
+ - **Baba na psy** – Artur Andrus	*(andurs.fasta)*
+ - **Ballada o dziewczynie co piła gorące mleko**	*(turystyczne.fasta)*
+ - **Ballada o krzyżowcu**	*(turystyczne.fasta)*
+ - **Baranek** – Kult	*(kult.fasta)*
+ - **Bieszczady**	*(turystyczne.fasta)*
+ - **Bieszczadzkie anioły** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Bieszczadzkie reagge**	*(turystyczne.fasta)*
+ - **Bitwa**	*(szanty.fasta)*
+ - **Burza**	*(szanty.fasta)*
+ - **Celina** – Kult	*(kult.fasta)*
+ - **Chałupy Welcome To** – Zbigniew Wodecki	*(roznosci.fasta)*
+ - **Chciałem być** – Krzysztof Krawczyk	*(roznosci.fasta)*
+ - **Chodź, pomaluj mój świat** – 2 plus 1	*(roznosci.fasta)*
+ - **Chryzantemy złociste**	*(roznosci.fasta)*
+ - **Chłopcy idą na wojne** – Pidżama Porno	*(grabaz.fasta)*
+ - **Czarne słońca** – Kult	*(kult.fasta)*
+ - **Czarny blues o czwartej nad ranem** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Czarny chleb i czarna kawa** – Strachy na lachy	*(grabaz.fasta)*
+ - **Dla Ciebie** – Myslovitz	*(myslovitz.fasta)*
+ - **Dust in the Wind** – Kansas	*(roznosci.fasta)*
+ - **Dym z jałowca**	*(turystyczne.fasta)*
+ - **Dziewczyna bez zęba na przedzie** – Kult	*(kult.fasta)*
+ - **Długość dźwięku samotności** – Myslovitz	*(myslovitz.fasta)*
+ - **Gdzie ta Keja**	*(szanty.fasta)*
+ - **Gyöngyhajú lány** – Omega	*(roznosci.fasta)*
+ - **Hej, sokoły**	*(turystyczne.fasta)*
+ - **Hi-Fi** – Wanda i Banda	*(roznosci.fasta)*
+ - **Hiszpańskie dziewczyny**	*(szanty.fasta)*
+ - **Ja soldat (Я – солдат)** – 5'Nizza	*(roznosci.fasta)*
+ - **Jak** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Jak dobrze nam**	*(turystyczne.fasta)*
+ - **Jaka jesteś**	*(turystyczne.fasta)*
+ - **Jaki był ten dzień**	*(turystyczne.fasta)*
+ - **Jasnowłosa**	*(szanty.fasta)*
+ - **Jedwab** – Róże Europy	*(roznosci.fasta)*
+ - **Jeźdźcy** – Kult	*(kult.fasta)*
+ - **Jolka, Jolka** – Budka Suflera	*(roznosci.fasta)*
+ - **Jožin z bažin** – Ivan Mládek	*(roznosci.fasta)*
+ - **Kim właściwie była ta piękna pani** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Kocham Cię jak Irlandię** – Kobranocka	*(roznosci.fasta)*
+ - **Kocham Cię, Kochanie Moje** – Maanam	*(roznosci.fasta)*
+ - **Kocham Wolność** – Chłopcy z Placu Broni	*(roznosci.fasta)*
+ - **Kocham piwo** – Big Cyc	*(roznosci.fasta)*
+ - **Kolorami miasta**	*(turystyczne.fasta)*
+ - **Krajka**	*(turystyczne.fasta)*
+ - **Krew Boga** – Kult	*(kult.fasta)*
+ - **Landy** – Kult	*(kult.fasta)*
+ - **Leluchów** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Lewe lewe loff** – Kult	*(kult.fasta)*
+ - **Lubię mówić z Tobą** – Akurat	*(roznosci.fasta)*
+ - **Majka** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Miasto budzi się** – Yugopolis	*(roznosci.fasta)*
+ - **Milion Piw** – Poziome Ziomy	*(poziome_ziomy.fasta)*
+ - **Moja Dziewczyna to Maszyna** – Poziome Ziomy	*(poziome_ziomy.fasta)*
+ - **Moja i twoja nadzieja** – Hey	*(roznosci.fasta)*
+ - **Morze**	*(szanty.fasta)*
+ - **Mury** – Jacek Kaczmarski	*(kaczmarski.fasta)*
+ - **My Cyganie**	*(turystyczne.fasta)*
+ - **Na jednej z dzikich plaż** – Rotary	*(roznosci.fasta)*
+ - **Na zawsze i na wieczność** – Wilki	*(wilki.fasta)*
+ - **Nasza klasa** – Jacek Kaczmarski	*(kaczmarski.fasta)*
+ - **Nasze przebudzenie**	*(turystyczne.fasta)*
+ - **Nie brookliński most** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Nie płacz Ewka** – Perfect	*(perfect.fasta)*
+ - **Nie rozdziobią nas kruki** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Niebo do wynajęcia** – Robert Kasprzycki	*(turystyczne.fasta)*
+ - **Niemanie**	*(roznosci.fasta)*
+ - **Nikt tak pięknie nie mówił, że się boi miłości** – Pidżama Porno	*(grabaz.fasta)*
+ - **Noc Komety** – Felicjan Andrzejczak	*(roznosci.fasta)*
+ - **Obława** – Jacek Kaczmarski	*(kaczmarski.fasta)*
+ - **Odynie**	*(szanty.fasta)*
+ - **Ogrodu serce** – Daab	*(roznosci.fasta)*
+ - **Opadły mgły, wstaje nowy dzień** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Ostatnia nocka** – Maciej Maleńczuk	*(roznosci.fasta)*
+ - **Pieśń Wielorybników**	*(szanty.fasta)*
+ - **Pieśń pożegnalna**	*(turystyczne.fasta)*
+ - **Piosenka bez tytułu**	*(turystyczne.fasta)*
+ - **Piłem w Spale, spałem w Pile** – Artur Andrus	*(andurs.fasta)*
+ - **Po co wolność** – Kult	*(kult.fasta)*
+ - **Pod kątem ostrym** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Polska** – Kult	*(kult.fasta)*
+ - **Powroty II**	*(szanty.fasta)*
+ - **Pożegnanie Liverpoolu**	*(szanty.fasta)*
+ - **Przechyły**	*(szanty.fasta)*
+ - **Przemijanie**	*(turystyczne.fasta)*
+ - **Płonie ognisko**	*(turystyczne.fasta)*
+ - **Rolling Down to Old Maui**	*(szanty.fasta)*
+ - **SOK** – Poziome Ziomy	*(poziome_ziomy.fasta)*
+ - **Scenariusz dla moich sąsiadów** – Myslovitz	*(myslovitz.fasta)*
+ - **Sen Katarzyny II** – Jacek Kaczmarski	*(kaczmarski.fasta)*
+ - **Skipper Jan Rebec (Jakub Kosiorek)**	*(szanty.fasta)*
+ - **Son of the blue sky** – Wilki	*(wilki.fasta)*
+ - **Sosenka**	*(turystyczne.fasta)*
+ - **Spalam się** – Kazik Na Żywo	*(kult.fasta)*
+ - **Spychacz** – TPN 25	*(roznosci.fasta)*
+ - **Stacja Warszawa** – Lady pank	*(lady_pank.fasta)*
+ - **Szanta narciarska** – Artur Andrus	*(andurs.fasta)*
+ - **Szara lilijka**	*(turystyczne.fasta)*
+ - **Ta droga była daleka** – Kazik & Kwartet ProForma	*(kult.fasta)*
+ - **Take me Home, Country Roads** – John Denver	*(roznosci.fasta)*
+ - **Tańcowanie**	*(szanty.fasta)*
+ - **Teksański** – Hey	*(roznosci.fasta)*
+ - **Tunele** – Poziome Ziomy	*(poziome_ziomy.fasta)*
+ - **Twoja generacja** – Pidżama Porno	*(grabaz.fasta)*
+ - **Twoje oczy lubią mnie** – Strachy na lachy	*(grabaz.fasta)*
+ - **Urke** – Wilki	*(wilki.fasta)*
+ - **Walec** – TPN 25	*(roznosci.fasta)*
+ - **Warszawa** – T.Love	*(roznosci.fasta)*
+ - **We wtorek w schronisku**	*(turystyczne.fasta)*
+ - **Wehikuł czasu** – Dżem	*(dzem.fasta)*
+ - **Whiskey** – Dżem	*(dzem.fasta)*
+ - **Wieczorne ogniobranie**	*(turystyczne.fasta)*
+ - **Wielorybnicy Grenlandzcy**	*(szanty.fasta)*
+ - **Wieża Babel** – Budka Suflera	*(roznosci.fasta)*
+ - **Wieża Radości, Wieża Samotności** – Sztywny Pal Azji	*(roznosci.fasta)*
+ - **Wiosna** – Zabili mi żółwia	*(roznosci.fasta)*
+ - **Wonderwall** – Oasis	*(roznosci.fasta)*
+ - **Wódka** – Kult	*(kult.fasta)*
+ - **Wędrowiec**	*(turystyczne.fasta)*
+ - **Z nim będziesz szczęśliwsza** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Zanim pójdę** – Happysad	*(roznosci.fasta)*
+ - **Zawsze tam gdzie Ty** – Lady pank	*(lady_pank.fasta)*
+ - **Zawsze z Tobą Chciałbym Być** – Ich Troje	*(roznosci.fasta)*
+ - **Zegarmistrz światła purpurowy** – Tadeusz Woźniak	*(roznosci.fasta)*
+ - **Łemata**	*(turystyczne.fasta)*
+
+### TODO:
+dupadf
+daspfoi
+dapfoida
