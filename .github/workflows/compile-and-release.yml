@@ -2,6 +2,8 @@ name: Compile Fasta to PDF Release
 
 on:
   push:
+    branches:
+      - 'main'
     paths:
       - '**.fasta' # Only runs when a .fasta file is modified
 
