@@ -6,9 +6,11 @@ import os
 import re
 
 from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A5
+from reportlab.lib.pagesizes import A5, A6
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.graphics import renderPDF
+from svglib.svglib import svg2rlg
 
 from song import Song, Paragraph
 
@@ -51,6 +53,7 @@ class CompilationConfig:
     par_gap = 12
 
     page_bind_offset = 20
+    pagenos = False
 
 config = CompilationConfig()
 
@@ -259,6 +262,14 @@ def compile_single_song(song: Song):
     return placements
 
 
+footer_image = svg2rlg("scripts/flowers.svg")
+footer_image_flipped = svg2rlg("scripts/flowers-flipped.svg")
+def add_footer_image(canvas: canvas, left_page: bool):
+    image = footer_image if left_page else footer_image_flipped
+    x_offset = 0 if left_page else config.page_size[0] - image.width
+    y_offset = 0 if not left_page else config.page_size[1] - image.height
+    renderPDF.draw(image, canvas, x_offset, y_offset)
+
 
 
 def compile(songs: Song | List[Song], output_path: str):
@@ -268,6 +279,8 @@ def compile(songs: Song | List[Song], output_path: str):
     placements = []
     for song in songs:
         placements.append(compile_single_song(song))
+    
+    print(max(len(placement) for placement in placements))
 
     # Ensure that two-page songs always start from even pages
     page_number = 1
@@ -286,7 +299,8 @@ def compile(songs: Song | List[Song], output_path: str):
             x_offset = config.page_bind_offset
             if page_number % 2 == 0:
                 x_offset = -x_offset
-            print_to_canvas(placement, c, page_number, x_offset)
+            add_footer_image(c, page_number % 2 == 0)
+            print_to_canvas(placement, c, page_number if config.pagenos else None, x_offset)
             page_number += 1
     c.save()
     print(f"Saved output to {output_path}.")
