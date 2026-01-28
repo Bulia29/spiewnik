@@ -28,6 +28,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libcairo2-dev
+      
+      - name: Install Polish locale
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y locales
+          sudo locale-gen pl_PL.UTF-8
+          sudo update-locale LANG=pl_PL.UTF-8
 
       - name: Install dependencies
         run: pip install -r requirements.txt
