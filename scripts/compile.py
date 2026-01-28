@@ -1,6 +1,7 @@
 from typing import List
 from math import ceil
 import argparse
+import locale
 import glob
 import os
 import re
@@ -12,7 +13,12 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.graphics import renderPDF
 from svglib.svglib import svg2rlg
 
-from song import Song, Paragraph
+from song import Song
+
+try:
+    locale.setlocale(locale.LC_COLLATE, 'pl_PL.UTF-8')
+except locale.Error:
+    print("Locale not supported on this system.")
 
 
 pdfmetrics.registerFont(TTFont('Garamond-Bold', 'EBGaramond-Bold.ttf'))
@@ -342,7 +348,7 @@ def main():
         print("No songs found. Check your file paths.")
         return
     
-    all_songs.sort(key=lambda x: x.title)
+    all_songs.sort(key=lambda x: locale.strxfrm(x.title))
 
     # selected_song = []
     # for song in all_songs:

@@ -1,6 +1,5 @@
 # Śpiewnik.fasta
 Wersja pdf do pobrania dostępna pod linkiem: https://github.com/Bulia29/spiewnik/releases/
-
 Zawarte piosenki (133):
  - **10 w skali Beauforta**	*(szanty.fasta)*
  - **24. lutego**	*(szanty.fasta)*
@@ -22,17 +21,17 @@ Zawarte piosenki (133):
  - **Celina** – Kult	*(kult.fasta)*
  - **Chałupy Welcome To** – Zbigniew Wodecki	*(roznosci.fasta)*
  - **Chciałem być** – Krzysztof Krawczyk	*(roznosci.fasta)*
+ - **Chłopcy idą na wojne** – Pidżama Porno	*(grabaz.fasta)*
  - **Chodź, pomaluj mój świat** – 2 plus 1	*(roznosci.fasta)*
  - **Chryzantemy złociste**	*(roznosci.fasta)*
- - **Chłopcy idą na wojne** – Pidżama Porno	*(grabaz.fasta)*
  - **Czarne słońca** – Kult	*(kult.fasta)*
  - **Czarny blues o czwartej nad ranem** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Czarny chleb i czarna kawa** – Strachy na lachy	*(grabaz.fasta)*
  - **Dla Ciebie** – Myslovitz	*(myslovitz.fasta)*
+ - **Długość dźwięku samotności** – Myslovitz	*(myslovitz.fasta)*
  - **Dust in the Wind** – Kansas	*(roznosci.fasta)*
  - **Dym z jałowca**	*(turystyczne.fasta)*
  - **Dziewczyna bez zęba na przedzie** – Kult	*(kult.fasta)*
- - **Długość dźwięku samotności** – Myslovitz	*(myslovitz.fasta)*
  - **Gdzie ta Keja**	*(szanty.fasta)*
  - **Gyöngyhajú lány** – Omega	*(roznosci.fasta)*
  - **Hej, sokoły**	*(turystyczne.fasta)*
@@ -51,15 +50,18 @@ Zawarte piosenki (133):
  - **Kim właściwie była ta piękna pani** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Kocham Cię jak Irlandię** – Kobranocka	*(roznosci.fasta)*
  - **Kocham Cię, Kochanie Moje** – Maanam	*(roznosci.fasta)*
- - **Kocham Wolność** – Chłopcy z Placu Broni	*(roznosci.fasta)*
  - **Kocham piwo** – Big Cyc	*(roznosci.fasta)*
+ - **Kocham Wolność** – Chłopcy z Placu Broni	*(roznosci.fasta)*
  - **Kolorami miasta**	*(turystyczne.fasta)*
  - **Krajka**	*(turystyczne.fasta)*
+ - **Krakowski Spleen** – Manaam	*(roznosci.fasta)*
  - **Krew Boga** – Kult	*(kult.fasta)*
  - **Landy** – Kult	*(kult.fasta)*
  - **Leluchów** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Lewe lewe loff** – Kult	*(kult.fasta)*
  - **Lubię mówić z Tobą** – Akurat	*(roznosci.fasta)*
+ - **Łemata**	*(turystyczne.fasta)*
+ - **Łydka** – Happysad	*(roznosci.fasta)*
  - **Majka** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Miasto budzi się** – Yugopolis	*(roznosci.fasta)*
  - **Milion Piw** – Poziome Ziomy	*(poziome_ziomy.fasta)*
@@ -84,10 +86,11 @@ Zawarte piosenki (133):
  - **Ogrodu serce** – Daab	*(roznosci.fasta)*
  - **Opadły mgły, wstaje nowy dzień** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Ostatnia nocka** – Maciej Maleńczuk	*(roznosci.fasta)*
- - **Pieśń Wielorybników**	*(szanty.fasta)*
  - **Pieśń pożegnalna**	*(turystyczne.fasta)*
- - **Piosenka bez tytułu**	*(turystyczne.fasta)*
+ - **Pieśń Wielorybników**	*(szanty.fasta)*
  - **Piłem w Spale, spałem w Pile** – Artur Andrus	*(andurs.fasta)*
+ - **Piosenka bez tytułu**	*(turystyczne.fasta)*
+ - **Płonie ognisko**	*(turystyczne.fasta)*
  - **Po co wolność** – Kult	*(kult.fasta)*
  - **Pod kątem ostrym** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Polska** – Kult	*(kult.fasta)*
@@ -95,12 +98,11 @@ Zawarte piosenki (133):
  - **Pożegnanie Liverpoolu**	*(szanty.fasta)*
  - **Przechyły**	*(szanty.fasta)*
  - **Przemijanie**	*(turystyczne.fasta)*
- - **Płonie ognisko**	*(turystyczne.fasta)*
  - **Rolling Down to Old Maui**	*(szanty.fasta)*
- - **SOK** – Poziome Ziomy	*(poziome_ziomy.fasta)*
  - **Scenariusz dla moich sąsiadów** – Myslovitz	*(myslovitz.fasta)*
  - **Sen Katarzyny II** – Jacek Kaczmarski	*(kaczmarski.fasta)*
  - **Skipper Jan Rebec (Jakub Kosiorek)**	*(szanty.fasta)*
+ - **SOK** – Poziome Ziomy	*(poziome_ziomy.fasta)*
  - **Son of the blue sky** – Wilki	*(wilki.fasta)*
  - **Sosenka**	*(turystyczne.fasta)*
  - **Spalam się** – Kazik Na Żywo	*(kult.fasta)*
@@ -108,7 +110,6 @@ Zawarte piosenki (133):
  - **Stacja Warszawa** – Lady pank	*(lady_pank.fasta)*
  - **Szanta narciarska** – Artur Andrus	*(andurs.fasta)*
  - **Szara lilijka**	*(turystyczne.fasta)*
- - **Ta droga była daleka** – Kazik & Kwartet ProForma	*(kult.fasta)*
  - **Take me Home, Country Roads** – John Denver	*(roznosci.fasta)*
  - **Tańcowanie**	*(szanty.fasta)*
  - **Teksański** – Hey	*(roznosci.fasta)*
@@ -120,21 +121,19 @@ Zawarte piosenki (133):
  - **Warszawa** – T.Love	*(roznosci.fasta)*
  - **We wtorek w schronisku**	*(turystyczne.fasta)*
  - **Wehikuł czasu** – Dżem	*(dzem.fasta)*
+ - **Wędrowiec**	*(turystyczne.fasta)*
  - **Whiskey** – Dżem	*(dzem.fasta)*
  - **Wieczorne ogniobranie**	*(turystyczne.fasta)*
  - **Wielorybnicy Grenlandzcy**	*(szanty.fasta)*
  - **Wieża Babel** – Budka Suflera	*(roznosci.fasta)*
  - **Wieża Radości, Wieża Samotności** – Sztywny Pal Azji	*(roznosci.fasta)*
  - **Wiosna** – Zabili mi żółwia	*(roznosci.fasta)*
- - **Wonderwall** – Oasis	*(roznosci.fasta)*
  - **Wódka** – Kult	*(kult.fasta)*
- - **Wędrowiec**	*(turystyczne.fasta)*
  - **Z nim będziesz szczęśliwsza** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Zanim pójdę** – Happysad	*(roznosci.fasta)*
  - **Zawsze tam gdzie Ty** – Lady pank	*(lady_pank.fasta)*
  - **Zawsze z Tobą Chciałbym Być** – Ich Troje	*(roznosci.fasta)*
  - **Zegarmistrz światła purpurowy** – Tadeusz Woźniak	*(roznosci.fasta)*
- - **Łemata**	*(turystyczne.fasta)*
 
 ### TODO:
-
+Dodać akordy do wonderwall i odkomentować (roznosci.fasta)
