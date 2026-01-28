@@ -11,18 +11,14 @@ def impose(input_path, output_path):
         pages.append(PageObject.create_blank_page(width=pages[0].mediabox.width, height=pages[0].mediabox.height))
     
     num_pages = len(pages)
-    num_sheets = num_pages // 2
+    num_sheets = num_pages // 4
 
     order = []
     for i in range(num_sheets):
-        if i % 2 == 0:
-            # Front side of the sheet
-            order.append(pages[num_pages - 1 - i]) # Left
-            order.append(pages[i])                 # Right
-        else:
-            # Back side of the sheet
-            order.append(pages[i])                 # Left
-            order.append(pages[num_pages - 1 - i]) # Right
+        order.append(pages[4*i+3])
+        order.append(pages[4*i+0])
+        order.append(pages[4*i+1])
+        order.append(pages[4*i+2])
 
     for i in range(0, len(reader.pages), 2):
         new_page = PageObject.create_blank_page(width=A4[1], height=A4[0])
