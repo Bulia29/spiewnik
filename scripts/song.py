@@ -38,6 +38,10 @@ class Song:
     
     def load_from_fasta(data: str) -> List['Song']:
         songs = []
+
+        datalines = data.split("\n")
+        data = "\n".join(filter(lambda x: not x.strip().startswith("#"), datalines))
+
         blocks = data.split(">")
 
         if len(blocks) <= 1: # There are no songs in the file

@@ -1,2 +1,1 @@
-krakowski spleen
-łydka
+Dodać akordy do wonderwall i odkomentować (roznosci.fasta)
