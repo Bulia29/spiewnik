@@ -348,7 +348,7 @@ def main():
         print("No songs found. Check your file paths.")
         return
     
-    all_songs.sort(key=lambda x: locale.strxfrm(x.title))
+    all_songs.sort(key=lambda x: locale.strxfrm(x.title.replace(" ", "")))
 
     # selected_song = []
     # for song in all_songs:
