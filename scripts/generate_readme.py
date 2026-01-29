@@ -18,6 +18,7 @@ sort_songs(songs)
 print("# Śpiewnik.fasta")
 
 print("Wersja pdf do pobrania dostępna pod linkiem: https://github.com/Bulia29/spiewnik/releases/")
+print("Przeglądarkowa wersja śpiewnika: https://tototmek.github.io/spiewnik.fasta.html")
 
 print(f"Zawarte piosenki ({len(songs)}):")
 
