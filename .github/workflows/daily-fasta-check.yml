@@ -1,6 +1,9 @@
 name: End of Day FASTA Processing
 
 on:
+  push:
+    branches:
+     ["automated-manifest-CI"]
   schedule:
     # Runs at 23:55 (11:55 PM) UTC every day
     - cron: '55 23 * * *'
