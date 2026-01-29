@@ -1,24 +1,19 @@
 import os
-import locale
 from song import Song
+from compile import sort_songs
 
-try:
-    locale.setlocale(locale.LC_COLLATE, 'pl_PL.UTF-8')
-except locale.Error:
-    print("Locale not supported on this system.")
-
-files = filter(lambda x: len(x) >= 6 and x[-6:] == ".fasta", os.listdir(os.getcwd()))
+files = filter(lambda x: len(x) >= 6 and x[-6:] == ".fasta", os.listdir(os.getcwd()+"/songs"))
 
 songs = []
 
 for path in files:
-    with open(path, 'r') as f:
+    with open("songs/"+path, 'r') as f:
         loaded_songs = Song.load_from_fasta(f.read())
         song: Song
         for song in loaded_songs:
             songs.append({"title": song.title, "author": song.author, "file": path})
 
-songs.sort(key=lambda x: locale.strxfrm(x["title"]))
+sort_songs(songs)
 
 print("# Śpiewnik.fasta")
 

@@ -312,6 +312,14 @@ def compile(songs: Song | List[Song], output_path: str):
     print(f"Saved output to {output_path}.")
 
 
+def sort_songs(songs : List[Song]):
+    try:
+        songs.sort(key=lambda x: locale.strxfrm(x.title.replace(" ", "")))
+    except AttributeError:
+        songs.sort(key=lambda x: locale.strxfrm(x["title"].replace(" ", "")))
+
+
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -348,7 +356,7 @@ def main():
         print("No songs found. Check your file paths.")
         return
     
-    all_songs.sort(key=lambda x: locale.strxfrm(x.title.replace(" ", "")))
+    sort_songs(all_songs)
 
     # selected_song = []
     # for song in all_songs:
