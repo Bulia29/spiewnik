@@ -1,0 +1,75 @@
+name: End of Day FASTA Processing
+
+on:
+  schedule:
+    # Runs at 23:55 (11:55 PM) UTC every day
+    - cron: '55 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for FASTA changes in last 24h
+        id: fasta-check
+        run: |
+          # Check if any .fasta files were modified in the last 24 hours
+          CHANGES=$(find . -name "*.fasta" -mtime -1)
+          if [ -n "$CHANGES" ]; then
+            echo "Changes detected."
+            echo "run_scripts=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes found."
+            echo "run_scripts=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        if: steps.fasta-check.outputs.run_scripts == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - name: Install system dependencies
+        if: steps.fasta-check.outputs.run_scripts == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev
+      
+      - name: Install Polish locale
+        if: steps.fasta-check.outputs.run_scripts == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y locales
+          sudo locale-gen pl_PL.UTF-8
+          sudo update-locale LANG=pl_PL.UTF-8
+
+      - name: Install dependencies
+        if: steps.fasta-check.outputs.run_scripts == 'true'
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Run Song Index and Readme Generation
+        if: steps.fasta-check.outputs.run_scripts == 'true'
+        run: |
+          python scripts/build_song_index.py
+          python scripts/generate_readme.py > README.md
+
+      - name: Commit and Push changes
+        if: steps.fasta-check.outputs.run_scripts == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md song_manifest.json
+          # Only commit if the README actually changed
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update song index and README"
+          git push

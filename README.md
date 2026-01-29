@@ -5,10 +5,10 @@ Zawarte piosenki (133):
  - **24. lutego**	*(szanty.fasta)*
  - **6 lat później** – Kult	*(kult.fasta)*
  - **A my nie chcemy uciekać stąd** – Jacek Kaczmarski	*(kaczmarski.fasta)*
- - **A wszystko to, bo Ciebie kocham** – Ich Troje	*(roznosci.fasta)*
  - **Anioł i diabeł**	*(turystyczne.fasta)*
  - **Arahja** – Kult	*(kult.fasta)*
  - **Autobiografia** – Perfect	*(perfect.fasta)*
+ - **A wszystko to, bo Ciebie kocham** – Ich Troje	*(roznosci.fasta)*
  - **Baba na psy** – Artur Andrus	*(andurs.fasta)*
  - **Ballada o dziewczynie co piła gorące mleko**	*(turystyczne.fasta)*
  - **Ballada o krzyżowcu**	*(turystyczne.fasta)*
@@ -37,12 +37,12 @@ Zawarte piosenki (133):
  - **Hej, sokoły**	*(turystyczne.fasta)*
  - **Hi-Fi** – Wanda i Banda	*(roznosci.fasta)*
  - **Hiszpańskie dziewczyny**	*(szanty.fasta)*
- - **Ja soldat (Я – солдат)** – 5'Nizza	*(roznosci.fasta)*
  - **Jak** – Stare Dobre Małżeństwo	*(SDM.fasta)*
- - **Jak dobrze nam**	*(turystyczne.fasta)*
  - **Jaka jesteś**	*(turystyczne.fasta)*
+ - **Jak dobrze nam**	*(turystyczne.fasta)*
  - **Jaki był ten dzień**	*(turystyczne.fasta)*
  - **Jasnowłosa**	*(szanty.fasta)*
+ - **Ja soldat (Я – солдат)** – 5'Nizza	*(roznosci.fasta)*
  - **Jedwab** – Róże Europy	*(roznosci.fasta)*
  - **Jeźdźcy** – Kult	*(kult.fasta)*
  - **Jolka, Jolka** – Budka Suflera	*(roznosci.fasta)*
@@ -71,14 +71,14 @@ Zawarte piosenki (133):
  - **Mury** – Jacek Kaczmarski	*(kaczmarski.fasta)*
  - **My Cyganie**	*(turystyczne.fasta)*
  - **Na jednej z dzikich plaż** – Rotary	*(roznosci.fasta)*
- - **Na zawsze i na wieczność** – Wilki	*(wilki.fasta)*
  - **Nasza klasa** – Jacek Kaczmarski	*(kaczmarski.fasta)*
  - **Nasze przebudzenie**	*(turystyczne.fasta)*
+ - **Na zawsze i na wieczność** – Wilki	*(wilki.fasta)*
+ - **Niebo do wynajęcia** – Robert Kasprzycki	*(turystyczne.fasta)*
  - **Nie brookliński most** – Stare Dobre Małżeństwo	*(SDM.fasta)*
+ - **Niemanie**	*(roznosci.fasta)*
  - **Nie płacz Ewka** – Perfect	*(perfect.fasta)*
  - **Nie rozdziobią nas kruki** – Stare Dobre Małżeństwo	*(SDM.fasta)*
- - **Niebo do wynajęcia** – Robert Kasprzycki	*(turystyczne.fasta)*
- - **Niemanie**	*(roznosci.fasta)*
  - **Nikt tak pięknie nie mówił, że się boi miłości** – Pidżama Porno	*(grabaz.fasta)*
  - **Noc Komety** – Felicjan Andrzejczak	*(roznosci.fasta)*
  - **Obława** – Jacek Kaczmarski	*(kaczmarski.fasta)*
@@ -119,8 +119,8 @@ Zawarte piosenki (133):
  - **Urke** – Wilki	*(wilki.fasta)*
  - **Walec** – TPN 25	*(roznosci.fasta)*
  - **Warszawa** – T.Love	*(roznosci.fasta)*
- - **We wtorek w schronisku**	*(turystyczne.fasta)*
  - **Wehikuł czasu** – Dżem	*(dzem.fasta)*
+ - **We wtorek w schronisku**	*(turystyczne.fasta)*
  - **Wędrowiec**	*(turystyczne.fasta)*
  - **Whiskey** – Dżem	*(dzem.fasta)*
  - **Wieczorne ogniobranie**	*(turystyczne.fasta)*
@@ -129,11 +129,11 @@ Zawarte piosenki (133):
  - **Wieża Radości, Wieża Samotności** – Sztywny Pal Azji	*(roznosci.fasta)*
  - **Wiosna** – Zabili mi żółwia	*(roznosci.fasta)*
  - **Wódka** – Kult	*(kult.fasta)*
- - **Z nim będziesz szczęśliwsza** – Stare Dobre Małżeństwo	*(SDM.fasta)*
  - **Zanim pójdę** – Happysad	*(roznosci.fasta)*
  - **Zawsze tam gdzie Ty** – Lady pank	*(lady_pank.fasta)*
  - **Zawsze z Tobą Chciałbym Być** – Ich Troje	*(roznosci.fasta)*
  - **Zegarmistrz światła purpurowy** – Tadeusz Woźniak	*(roznosci.fasta)*
+ - **Z nim będziesz szczęśliwsza** – Stare Dobre Małżeństwo	*(SDM.fasta)*
 
 ### TODO:
 Dodać akordy do wonderwall i odkomentować (roznosci.fasta)

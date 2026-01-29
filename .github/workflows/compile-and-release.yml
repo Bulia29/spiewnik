@@ -40,7 +40,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run compilation script
-        run: python scripts/compile.py *.fasta
+        run: python scripts/compile.py songs/*.fasta
 
       - name: Generate Tag Name
         id: tag
