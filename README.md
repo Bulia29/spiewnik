@@ -1,5 +1,6 @@
 # Śpiewnik.fasta
 Wersja pdf do pobrania dostępna pod linkiem: https://github.com/Bulia29/spiewnik/releases/
+Przeglądarkowa wersja śpiewnika: https://tototmek.github.io/spiewnik.fasta.html
 Zawarte piosenki (133):
  - **10 w skali Beauforta**	*(szanty.fasta)*
  - **24. lutego**	*(szanty.fasta)*
@@ -122,7 +123,7 @@ Zawarte piosenki (133):
  - **Wehikuł czasu** – Dżem	*(dzem.fasta)*
  - **We wtorek w schronisku**	*(turystyczne.fasta)*
  - **Wędrowiec**	*(turystyczne.fasta)*
- - **Whiskey** – Dżem	*(dzem.fasta)*
+ - **Whisky** – Dżem	*(dzem.fasta)*
  - **Wieczorne ogniobranie**	*(turystyczne.fasta)*
  - **Wielorybnicy Grenlandzcy**	*(szanty.fasta)*
  - **Wieża Babel** – Budka Suflera	*(roznosci.fasta)*
