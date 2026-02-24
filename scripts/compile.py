@@ -26,6 +26,7 @@ pdfmetrics.registerFont(TTFont('NotoSerif', 'NotoSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('NotoSerif-SemiBold', 'NotoSerif-SemiBold.ttf'))
 pdfmetrics.registerFont(TTFont('NotoSerif-Light', 'NotoSerif-Light.ttf'))
 pdfmetrics.registerFont(TTFont('NotoSerif-LightItalic', 'NotoSerif-LightItalic.ttf'))
+pdfmetrics.registerFont(TTFont('CMU-Typewriter', 'cmunbto.ttf'))
 
 class FontConfig:
     def __init__(self, font_name: str, font_size: float):
@@ -38,7 +39,7 @@ class CompilationConfig:
     font_author = FontConfig("NotoSerif-Light", 9)
     font_lyrics = FontConfig("NotoSerif", 9)
     font_chords = FontConfig("NotoSerif-SemiBold", 9)
-    font_comment = FontConfig("NotoSerif-LightItalic", 8)
+    font_comment = FontConfig("CMU-Typewriter", 8)
     
     max_title_width = 280
     title_author_spacing_x = 5
