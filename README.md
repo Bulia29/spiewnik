@@ -1,7 +1,7 @@
 # Śpiewnik.fasta
 Wersja pdf do pobrania dostępna pod linkiem: https://github.com/Bulia29/spiewnik/releases/
 Przeglądarkowa wersja śpiewnika: https://tototmek.github.io/spiewnik.fasta.html
-Zawarte piosenki (133):
+Zawarte piosenki (137):
  - **10 w skali Beauforta**	*(szanty.fasta)*
  - **24. lutego**	*(szanty.fasta)*
  - **6 lat później** – Kult	*(kult.fasta)*
@@ -103,6 +103,7 @@ Zawarte piosenki (133):
  - **Scenariusz dla moich sąsiadów** – Myslovitz	*(myslovitz.fasta)*
  - **Sen Katarzyny II** – Jacek Kaczmarski	*(kaczmarski.fasta)*
  - **Skipper Jan Rebec (Jakub Kosiorek)**	*(szanty.fasta)*
+ - **Sługi za szlugi** – Yugopolis	*(roznosci.fasta)*
  - **SOK** – Poziome Ziomy	*(poziome_ziomy.fasta)*
  - **Son of the blue sky** – Wilki	*(wilki.fasta)*
  - **Sosenka**	*(turystyczne.fasta)*
@@ -114,6 +115,7 @@ Zawarte piosenki (133):
  - **Take me Home, Country Roads** – John Denver	*(roznosci.fasta)*
  - **Tańcowanie**	*(szanty.fasta)*
  - **Teksański** – Hey	*(roznosci.fasta)*
+ - **The House of the Rising Sun** – Animals	*(roznosci.fasta)*
  - **Tunele** – Poziome Ziomy	*(poziome_ziomy.fasta)*
  - **Twoja generacja** – Pidżama Porno	*(grabaz.fasta)*
  - **Twoje oczy lubią mnie** – Strachy na lachy	*(grabaz.fasta)*
@@ -128,7 +130,9 @@ Zawarte piosenki (133):
  - **Wielorybnicy Grenlandzcy**	*(szanty.fasta)*
  - **Wieża Babel** – Budka Suflera	*(roznosci.fasta)*
  - **Wieża Radości, Wieża Samotności** – Sztywny Pal Azji	*(roznosci.fasta)*
+ - **Wind of change** – Scorpions	*(roznosci.fasta)*
  - **Wiosna** – Zabili mi żółwia	*(roznosci.fasta)*
+ - **Wojny Gwiezdne** – Kryzys	*(roznosci.fasta)*
  - **Wódka** – Kult	*(kult.fasta)*
  - **Zanim pójdę** – Happysad	*(roznosci.fasta)*
  - **Zawsze tam gdzie Ty** – Lady pank	*(lady_pank.fasta)*
@@ -137,13 +141,4 @@ Zawarte piosenki (133):
  - **Z nim będziesz szczęśliwsza** – Stare Dobre Małżeństwo	*(SDM.fasta)*
 
 ### TODO:
-mój rozmarynie
-wojny gwiezdne
-hej leonardo
-house of the rising sun 
-wind of change
-Halleluja
-Cyiniczne córy Zurychu
-Sługi za szlugi
-
 
