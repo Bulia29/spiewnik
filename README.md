@@ -1,7 +1,7 @@
 # Śpiewnik.fasta
 Wersja pdf do pobrania dostępna pod linkiem: https://github.com/Bulia29/spiewnik/releases/
 Przeglądarkowa wersja śpiewnika: https://tototmek.github.io/spiewnik.fasta.html
-Zawarte piosenki (137):
+Zawarte piosenki (138):
  - **10 w skali Beauforta**	*(szanty.fasta)*
  - **24. lutego**	*(szanty.fasta)*
  - **6 lat później** – Kult	*(kult.fasta)*
@@ -116,6 +116,7 @@ Zawarte piosenki (137):
  - **Tańcowanie**	*(szanty.fasta)*
  - **Teksański** – Hey	*(roznosci.fasta)*
  - **The House of the Rising Sun** – Animals	*(roznosci.fasta)*
+ - **Trzy życzenia** – Bajpas Tan	*(roznosci.fasta)*
  - **Tunele** – Poziome Ziomy	*(poziome_ziomy.fasta)*
  - **Twoja generacja** – Pidżama Porno	*(grabaz.fasta)*
  - **Twoje oczy lubią mnie** – Strachy na lachy	*(grabaz.fasta)*
